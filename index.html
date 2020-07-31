@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to do list</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+ 
+</head>
+<body>
+    
+    <!--
+        toggle dark mode = <i class="fas fa-adjust"></i>
+    -->
+ 
+
+    <main class="list-container">
+
+        <div class="dark dark-mode-toggle">
+
+            <button class="dark-btn" type="submit">
+                <i class="fa fa-adjust"></i>
+            </button>
+    
+        </div>
+
+        <header>
+            <h1 class="title"></h1>            
+        </header>
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit">
+                <i class="fa fa-plus-square"></i>
+            </button>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+
+            </ul>
+        </div>
+
+    </main>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

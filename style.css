@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EAE7DC;
+    font-family: 'Mulish', sans-serif;
+    color: #494846;
+    display: flex;
+    justify-content: center;
+    margin: 7em 10% 7em;
+}
+
+.list-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(73, 72, 70);
+    padding: 30px 0 80px;
+    width: 60%;
+    min-width: 400px;
+    max-width: 600px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6, auto);
+  
+}
+
+header {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+header, form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+form {
+    border: 1px solid #F0F1F3;
+    border-radius: 10px;
+    background-color: #F0F1F3;
+    margin: 25px 20%;   
+}
+
+form input, form button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #F0F1F3;
+    outline: none;
+}
+
+form input {
+    width: 50%;
+    flex-grow: 8;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    color: rgb(73, 72, 70);
+    padding: 0.5rem;
+}
+
+form button {
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 0.6rem 0.15rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+form button:hover, 
+.todo-list button:hover  {
+    background: white;
+}
+
+i {
+    font-size: 1.1rem;
+    text-align: right;
+    color: rgb(73, 72, 70);
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 20%;
+    background-color:#F0F1F3;
+    border-radius: 10px;   
+    transition: all 0.6s ease;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo li {
+    flex: 1;
+    margin-left: 1em;
+}
+
+.delete-btn, .complete-btn, .dark-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 10px;
+    background: #F0F1F3;
+}
+
+.fa-check-square, .fa-minus-square, .fa-check-square, .fa-adjust {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem);
+    opacity: 0;
+}
+
+.dark {
+    margin: 0 1em;
+    display: block;
+    
+}   
+
+.dark-btn{
+    border: 1.5px solid #d7d8da;
+    
+}
+
+.dark-btn:hover {
+    background: white;
+}
+
+
+
+
