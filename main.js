@@ -2,20 +2,37 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
+const clearButton = document.querySelector('.clear-btn');
 let todoTitle = document.querySelector('.title');
+let listName = localStorage.getItem("person");
 
-todoTitle.innerHTML = "to do list"
-//Prompt name
-/*const person = prompt("Hey! What's your name?");
 
-if (person == false || person === null) {
-    todoTitle.innerHTML = "to do list";
+//list name setting
+const setName = () => {
+    let person = listName;
+
+    if (person == false || person === null) {
+        todoTitle.innerHTML = "to do list";
+    } else {
+        todoTitle.innerHTML = person + "'s to do list";
+    }
+}
+
+if (!listName) {
+    //prompt for name and save
+    listName = prompt("Hey! What's your name?");
+    localStorage.setItem("person", listName);
+
+    //set name to saved name
+    setName();
+
 } else {
-    todoTitle.innerHTML = person + "'s to do list";
-}*/
+    //set name to saved name
+    setName();
+}
+
 
 //Functions
-
 const addTodo = e => {
     //prevent form from submitting
     e.preventDefault();
@@ -54,7 +71,6 @@ const deleteCheck = e => {
         todo.addEventListener('transitionend', function(){
             todo.remove();
         });
-
     }
 
     //complete task
@@ -64,10 +80,14 @@ const deleteCheck = e => {
 
 }
 
+const clearAll = () => {
+    document.querySelector('.todo-list').innerHTML = "";
+}
 
 
 //Event listeners
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
+clearButton.addEventListener('click', clearAll);
 
 
