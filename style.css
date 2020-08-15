@@ -38,16 +38,13 @@ body {
     box-shadow: 0 0 10px var(--clr-shadow);
     padding: 30px 0;
     width: 60%;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 600px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(6, auto);
 }
 
 /*Border radius*/
 .list-container, form, form input, button, .todo {
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 /*Title*/
@@ -180,14 +177,16 @@ i {
 
 /*Dark mode toggle*/
 .dark {
-    margin: 0 2em 0 auto;
-    display: block;
+    margin: 0 1.5em 0.5em;
+    display: flex;
+    justify-content: flex-end;
 }   
 
 /*clear list*/
 .clear-list {
-    display: block;
-    margin: 30px auto 10px;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 10px;
 }
 
 
