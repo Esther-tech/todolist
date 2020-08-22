@@ -8,7 +8,7 @@
 
 /*root colors*/
 :root {
-    --clr-bg: #EAE7DC;
+    --clr-bg: #abcfc3;
     --clr-txt: #494846;
     --clr-white: #FFF;
     --clr-primary: #F0F1F3; 
@@ -16,7 +16,7 @@
 }
 
 .darkmode {
-    --clr-bg: rgb(151, 146, 137);
+    --clr-bg: #69837a;
     --clr-txt: white;
     --clr-white: #494846;
     --clr-primary: #c7c7c7; 
