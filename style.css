@@ -8,7 +8,7 @@
 
 /*root colors*/
 :root {
-    --clr-bg: #abcfc3;
+    --clr-bg: #EAE7DC;
     --clr-txt: #494846;
     --clr-white: #FFF;
     --clr-primary: #F0F1F3; 
@@ -16,7 +16,7 @@
 }
 
 .darkmode {
-    --clr-bg: #69837a;
+    --clr-bg: rgb(151, 146, 137);
     --clr-txt: white;
     --clr-white: #494846;
     --clr-primary: #c7c7c7; 
@@ -38,13 +38,16 @@ body {
     box-shadow: 0 0 10px var(--clr-shadow);
     padding: 30px 0;
     width: 60%;
-    min-width: 300px;
+    min-width: 400px;
     max-width: 600px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6, auto);
 }
 
 /*Border radius*/
 .list-container, form, form input, button, .todo {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 /*Title*/
@@ -177,16 +180,14 @@ i {
 
 /*Dark mode toggle*/
 .dark {
-    margin: 0 1.5em 0.5em;
-    display: flex;
-    justify-content: flex-end;
+    margin: 0 2em 0 auto;
+    display: block;
 }   
 
 /*clear list*/
 .clear-list {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0 10px;
+    display: block;
+    margin: 30px auto 10px;
 }
 
 

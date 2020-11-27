@@ -11,7 +11,7 @@ let listName = localStorage.getItem("person");
 const setName = () => {
     let person = listName;
 
-    if (person == false || person === null || person === 'null') {
+    if (person == false || person === null) {
         todoTitle.innerHTML = "to do list";
     } else {
         todoTitle.innerHTML = person + "'s to do list";
